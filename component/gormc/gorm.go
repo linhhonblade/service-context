@@ -30,6 +30,16 @@ type GormOpt struct {
 	maxConnectionIdleTime int
 }
 
+func NewGormOpt(dsn, dbType string, maxOpenConnections, maxIdleConnections, maxConnectionIdleTime int) *GormOpt {
+	return &GormOpt{
+		dsn:                   dsn,
+		dbType:                dbType,
+		maxOpenConnections:    maxOpenConnections,
+		maxIdleConnections:    maxIdleConnections,
+		maxConnectionIdleTime: maxConnectionIdleTime,
+	}
+}
+
 type gormDB struct {
 	id     string
 	prefix string
@@ -41,6 +51,14 @@ type gormDB struct {
 func NewGormDB(id, prefix string) *gormDB {
 	return &gormDB{
 		GormOpt: new(GormOpt),
+		id:      id,
+		prefix:  strings.TrimSpace(prefix),
+	}
+}
+
+func NewGormDBWithOpt(id, prefix string, opt *GormOpt) *gormDB {
+	return &gormDB{
+		GormOpt: opt,
 		id:      id,
 		prefix:  strings.TrimSpace(prefix),
 	}
