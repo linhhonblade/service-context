@@ -18,7 +18,7 @@ It offers:
 
 ### 1. Install it with this cmd:
 ```shell
-go get -u github.com/viettranx/service-context
+go get -u github.com/linhhonblade/service-context
 ```
 
 ### 2. Define your component:
@@ -40,7 +40,7 @@ package main
 
 import (
 	"flag"
-	sctx "github.com/viettranx/service-context"
+	sctx "github.com/linhhonblade/service-context"
 )
 
 type simpleComponent struct {
@@ -79,7 +79,7 @@ func (s *simpleComponent) GetValue() string {
 package main
 
 import (
-	"github.com/viettranx/service-context"
+	"github.com/linhhonblade/service-context"
 	"log"
 )
 

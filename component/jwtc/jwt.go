@@ -5,8 +5,8 @@ import (
 	"flag"
 	"fmt"
 	"github.com/golang-jwt/jwt/v5"
+	sctx "github.com/linhhonblade/service-context"
 	"github.com/pkg/errors"
-	sctx "github.com/viettranx/service-context"
 	"time"
 )
 

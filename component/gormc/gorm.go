@@ -3,9 +3,9 @@ package gormc
 import (
 	"flag"
 	"fmt"
+	sctx "github.com/linhhonblade/service-context"
+	"github.com/linhhonblade/service-context/component/gormc/dialets"
 	"github.com/pkg/errors"
-	sctx "github.com/viettranx/service-context"
-	"github.com/viettranx/service-context/component/gormc/dialets"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"strings"

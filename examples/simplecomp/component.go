@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	sctx "github.com/viettranx/service-context"
+	sctx "github.com/linhhonblade/service-context"
 )
 
 type simpleComponent struct {

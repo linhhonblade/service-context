@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/viettranx/service-context"
+	"github.com/linhhonblade/service-context"
 	"log"
 )
 

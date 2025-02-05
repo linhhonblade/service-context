@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	sctx "github.com/viettranx/service-context"
+	sctx "github.com/linhhonblade/service-context"
 	"net/http"
 )
 

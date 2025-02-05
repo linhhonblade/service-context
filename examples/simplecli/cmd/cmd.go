@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	sctx "github.com/linhhonblade/service-context"
+	"github.com/linhhonblade/service-context/component/ginc"
 	"github.com/spf13/cobra"
-	sctx "github.com/viettranx/service-context"
-	"github.com/viettranx/service-context/component/ginc"
 	"log"
 	"os"
 )
