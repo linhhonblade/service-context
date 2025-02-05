@@ -1,4 +1,4 @@
-module github.com/viettranx/service-context
+module github.com/linhhonblade/service-context
 
 go 1.19
 
